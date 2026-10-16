@@ -34,7 +34,7 @@
   width: $card-width;
   justify-content: space-between;
   align-items: center;
-  transition: color , 0.3s;
+  transition: color 0.3s;
 
   @include on-hover(transform, scale(120%));
 
