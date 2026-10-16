@@ -34,6 +34,7 @@
   width: $card-width;
   justify-content: space-between;
   align-items: center;
+  transition: color , 0.3s;
 
   @include on-hover(transform, scale(120%));
 
@@ -123,11 +124,18 @@
       @include on-hover(color, $button-text-hovered);
     }
   }
+
+  &__reviews {
+    color: $main-color-text;
+    font-size: 10px;
+    font-weight: 400;
+    align-content: end;
+  }
+
+  &:hover {
+    .card__title {
+      color: $card-title-hovered;
+    }
+  }
 }
 
-.reviews {
-  color: $main-color-text;
-  font-size: 10px;
-  font-weight: 400;
-  align-content: end;
-}
